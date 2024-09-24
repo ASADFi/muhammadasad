@@ -1,0 +1,44 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependency directories
+node_modules/
+.pnp
+.pnp.js
+
+# Optional npm cache directory
+.npm
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Webpack files
+# public/static
+build/
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+
+# Linting files
+.eslintcache
+
+# Test coverage
+coverage/
+
+# Mac system files
+*.DS_Store
+
+# Miscellaneous
+*.lock
