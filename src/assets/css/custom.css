@@ -1,0 +1,372 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+img{
+    @apply pointer-events-none select-none
+}
+.section-spacing{
+    @apply mt-28 md:mt-40 xl:mt-60
+}
+.primary-btn{
+    @apply inline-flex justify-center items-center gap-3 text-base select-none text-primary hover:text-white font-medium bg-transparent hover:bg-primary py-2 px-5 border border-primary transition-all duration-300 ease-in-out
+}
+.styled-link{
+    @apply relative inline-flex items-center gap-3 text-base
+}
+.styled-link:after{
+    @apply content-[''] block absolute left-1/2 -translate-x-1/2 bottom-[-4px] w-0 border-b border-light transition-all duration-500 ease-in-out
+}
+.styled-link.last-link{
+    @apply text-[#606EE4]
+}
+.styled-link.last-link:after{
+    @apply border-primary
+}
+.styled-link:hover:after{
+    @apply w-5
+}
+.styled-link.active:after{
+    @apply w-full
+}
+.styled-link.mobile-link{
+    @apply text-2xl font-medium
+}
+.styled-link.last-link.mobile-link{
+    @apply text-light text-base
+}
+.styled-link.last-link.mobile-link.active:after{
+    @apply border-light
+}
+.footer-link svg{
+    @apply hidden
+}
+.feedback-slider .swiper-slide{
+    @apply h-0
+}
+.feedback-slider .swiper-slide-active{
+    @apply h-auto
+}
+
+.dotted-styled-bg{
+    @apply relative bg-[url('https://www.concealed.pt/_next/static/media/pattern-background.8fe61216.png')] bg-auto bg-[50%]
+}
+
+/* Home Page CSS */
+.home-view .hero-heading{
+    @apply relative overflow-hidden select-none font-apercu text-5xl sm:text-6xl md:text-[90px] md:leading-[95px] lg:text-[128px] lg:leading-[136px] font-medium
+}
+.home-view .hero-heading span{
+    @apply inline-block
+}
+.home-view .heading-overlay{
+    transition: opacity .4s;
+    pointer-events: none;
+    z-index: 1;
+    position: absolute;
+    background: radial-gradient(rgba(5, 11, 16, 0), rgba(5, 11, 16, .5) 4%, rgba(5, 11, 16, .9) 8%);
+    width: 500%;
+    height: 500%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    top: 75%;
+    left: 20%;
+}
+.home-view .heading-overlay.mouse-left{
+    transition: top 0.5s ease-out, left 0.5s ease-out, opacity .4s;
+}
+.home-view .hero-text{
+    @apply text-2xl md:text-[28px] md:leading-[44px] lg:text-[32px] lg:leading-[48px] mt-6 md:mt-14
+}
+
+.styled-button{
+    @apply relative text-lg font-medium bg-transparent p-1 border-none transition-all duration-300 ease-in-out inline-flex gap-3 items-center justify-center
+}
+.styled-button:after{
+    @apply content-[''] block h-0.5 opacity-0 absolute left-1/2 -translate-x-1/2 bottom-[4px] w-[calc(100%_-_8px)] bg-light transition-all duration-500 ease-in-out
+}
+.styled-button:hover:after{
+    @apply opacity-100
+}
+
+.section-header-heading{
+    @apply text-3xl xl:text-5xl font-medium font-apercu max-w-[620px] mx-auto
+}
+.section-header-heading.left, .section-header-main-heading.left{
+    @apply ml-0
+}
+.section-header-main-heading{
+    @apply text-3xl md:text-5xl xl:text-6xl font-medium font-apercu max-w-[620px] mx-auto
+}
+.section-header-subtitle{
+    @apply text-lg md:text-xl font-apercu text-gray-text font-medium mb-3 uppercase
+}
+
+.project-filters-amount{
+    @apply absolute top-[-11px] text-xs
+}
+
+
+.testimonials-mobile-slide{
+    @apply !w-[calc(100%_-_20px)] !h-auto
+}
+.testimonials-mobile-slider .swiper-pagination-bullet{
+    @apply !w-[25%] !h-px
+}
+
+/* Career Page CSS */
+.career-perks{
+    @apply relative pb-[620px]
+}
+.career-perks:before{
+    background-image: linear-gradient(180deg,#040b10,rgba(4,11,16,0) 65%,rgba(4,11,16,0) 90%,#040b10),linear-gradient(90deg,transparent 70%,#040b10), url('https://www.concealed.pt/_next/static/media/map.da8bb3d0.png');
+    @apply content-[''] hidden md:block absolute z-[1] right-0 w-full h-full bg-no-repeat bg-bottom md:bg-[length:1400px]
+}
+
+/* About Page CSS */
+.about-page{
+    @apply overflow-x-hidden
+}
+.about-page .about-images{
+    @apply max-w-[1400px]
+}
+.about-page .dates-slider{
+    @apply !overflow-visible relative mb-20
+}
+.about-page .dates-slider:before,
+.about-page .about-slider:after,
+.testimonials-mobile-slider:before,
+.testimonials-mobile-slider:after{
+    @apply absolute top-0 h-full w-full z-10 content-[""]
+}
+.about-page .dates-slider:before, .testimonials-mobile-slider:before{
+    background: linear-gradient(-90deg, rgba(4, 11, 16, 0), #040b10 15%);
+    @apply right-full
+}
+.about-page .dates-slider:after, .testimonials-mobile-slider:after{
+    background: linear-gradient(90deg, rgba(4, 11, 16, 0), #040b10 15%);
+    @apply left-full
+}
+.about-page .dates-slider-indicator{
+    @apply border border-light focus:bg-primary w-[30px] h-[30px] md:w-[43px] md:h-[43px] flex items-center justify-center
+}
+.about-page .dates-slider-indicator.disabled{
+    @apply opacity-40 cursor-not-allowed focus:!bg-transparent
+}
+
+
+
+input[type=text], input[type=email], input[type=number]{
+    @apply bg-transparent font-medium text-2xl pt-0.5 w-full outline-0 border-b border-light/20 hover:border-light focus:border-light transition duration-300 ease-in-out
+}
+form label{
+    @apply block text-lg text-[#afafaf] mb-2
+}
+form label.checkbox-label{
+    @apply mb-0 text-light text-base cursor-pointer
+}
+
+
+.custom-checkbox{
+    @apply bg-transparent rounded border border-[#363b3f] group-hover:border-primary focus:border-primary w-4 h-4 flex flex-shrink-0 justify-center items-center cursor-pointer transition duration-300 ease-in-out
+}
+input:checked + div {
+    @apply border-blue-500;
+}
+input:checked + div svg {
+    @apply block;
+}
+
+.hamburger-toggle{
+    height: 14px;
+    width: 18px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger-toggle .hamburger-bar{
+    @apply bg-light h-0.5 w-full rounded-[10px] transition-transform duration-[.4s] ease-in-out
+}
+.hamburger-toggle.toggle-open .hamburger-bar:nth-child(1){
+    @apply transform rotate-45
+}
+.hamburger-toggle.toggle-open .hamburger-bar:nth-child(2){
+    @apply transform scale-y-0
+}
+.hamburger-toggle.toggle-open .hamburger-bar:nth-child(3){
+    @apply transform -rotate-45
+}
+@keyframes barAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.animate-bar {
+    animation: barAnimation 4s linear;
+}
+
+.smooth-transition{
+    @apply transition-all duration-700 ease-in-out
+}
+.svg-transition{
+    @apply transition-all duration-700 ease-in-out
+}
+
+/* Process Page CSS */
+.process-page .process-title{
+    @apply text-2xl md:text-3xl xl:text-5xl mb-4 md:mb-5 font-apercu font-medium
+}
+.process-page .process-desc{
+    @apply text-base md:text-lg xl:text-2xl max-md:mb-5
+}
+.process-page .process-step{
+    @apply inline text-nowrap max-md:!w-auto
+}
+.process-page .process-arrow{
+    @apply max-md:!rotate-90
+}
+.process-page .product-strategy-conversation{
+    @apply max-md:flex max-md:flex-col max-md:items-center h-0 pb-[265px]
+}
+.process-page .product-strategy-conversation .product-strategy-message{
+    @apply p-6 mb-5 border max-xl:scale-[.8] border-light text-light text-lg font-medium flex flex-col justify-between relative md:absolute md:top-1/2 md:left-1/2 h-auto w-[335px] md:h-[248px] md:w-[256px]
+}
+.process-page .product-strategy-conversation .product-strategy-message.client-message-1,
+.process-page .product-strategy-conversation .product-strategy-message.client-message-2{
+    @apply bg-primary
+}
+.process-page .product-strategy-conversation .product-strategy-message.concealed-message-1,
+.process-page .product-strategy-conversation .product-strategy-message.concealed-message-2{
+    @apply bg-mild-gray
+}
+
+.process-page .ui-ux-design-step .above-md-screens .scribbles-img,
+.process-page .development-step .code-mockup,
+.process-page .development-step .developed-site,
+.process-page .conversion-step .conversion-img,
+.process-page .conversion-step svg{
+    @apply absolute md:top-1/2 md:left-1/2
+}
+.process-page .development-step .code-mockup-text{
+    @apply text-base leading-[30px] font-sf-mono font-bold
+}
+.process-page .development-step .code-mockup-text .animation-text-tag{
+    @apply text-[#e7b664] ml-[22px]
+}
+.process-page .development-step .code-mockup-text .animation-text-line{
+    @apply text-light ml-10
+}
+.process-page .development-step .code-mockup-text .animation-text-ending-tag{
+    @apply text-light ml-[6px]
+}
+.process-page .development-step .code-output-demo{
+    @apply absolute w-[500px] top-[130px] left-[-140px] lg:left-[-20px] lg:top-[240px] 2xl:left-[120px] 2xl:top-[280px] translate-x-[840px] translate-y-[190px] text-2xl
+}
+
+.process-page .ui-ux-design-step .above-md-screens img,
+.process-page .ui-ux-design-step .above-md-screens svg,
+.process-page .conversion-step .conversion-img{
+    @apply md:max-w-[688px] lg:max-w-[928px]
+}
+.process-page .ui-ux-design-step .above-md-screens svg,
+.process-page .ui-ux-design-step .above-md-screens img{
+    @apply absolute z-[5] top-1/2 left-1/2
+}
+.process-page .ui-ux-design-step .design-comment.comment-1{
+    @apply translate-x-[20px] translate-y-[60px]
+}
+.process-page .ui-ux-design-step .design-comment.comment-2{
+    @apply translate-x-[130px] translate-y-[140px]
+}
+.process-page .ui-ux-design-step .design-comment.comment-3{
+    @apply translate-x-[-170px] translate-y-[360px]
+}
+.process-page .ui-ux-design-step .color-options{
+    @apply translate-x-[320px] translate-y-[-10px] z-[6] w-[180px]
+}
+.process-page .ui-ux-design-step .cursor-svg{
+    @apply translate-x-[-200px] translate-y-[180px] z-[7]
+}
+.process-page .conversion-step .above-md-screens .conversion-comment-1{
+    @apply translate-x-[430px] translate-y-[-70px]
+}
+.process-page .conversion-step .above-md-screens .conversion-comment-2{
+    @apply translate-x-[300px] translate-y-[100px]
+}
+.process-page .conversion-step .above-md-screens .conversion-comment-3{
+    @apply translate-x-[420px] translate-y-[350px]
+}
+.process-page .conversion-step .above-md-screens .conversion-comment-4{
+    @apply translate-x-[-550px] translate-y-[410px]
+}
+
+.process-page .conversion-step .below-md-screens .conversion-comment-1{
+    @apply translate-x-[180px] translate-y-[calc(-50%_-_80px)] top-1/2 right-[20px] w-full
+}
+.process-page .conversion-step .below-md-screens .conversion-comment-2{
+    @apply translate-x-[-100px] translate-y-[-100px] top-[100px] left-[20px] w-full
+}
+.process-page .conversion-step .below-md-screens .conversion-comment-3{
+    @apply translate-x-[110px] translate-y-[calc(-50%_+_20px)] top-1/2 right-[20px] w-full
+}
+.process-page .conversion-step .below-md-screens .conversion-comment-4{
+    @apply translate-x-[-110px] translate-y-[10px] bottom-[10px] left-[20px] w-full
+}
+
+.contact-us-lamp{
+    @apply absolute top-0 left-1/2 ml-1.5 transform -translate-x-1/2 -translate-y-full opacity-0
+}
+
+.project-filter{
+    @apply relative font-light cursor-pointer hover:text-primary transition duration-300 ease-in-out
+}
+
+
+.carousel-container {
+    @apply relative h-[120px] md:h-[80px] w-full
+}
+
+.carousel-card {
+    @apply flex justify-center items-center size-10 lg:size-16 shrink-0
+}
+
+.carousel-card > img {
+    @apply h-full w-full object-contain
+}
+
+.carousel-track {
+    @apply flex absolute left-0 justify-center items-center h-[120px] md:h-[80px] w-[100%] gap-14 md:gap-20 lg:gap-28 pointer-events-none will-change-transform;
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.project-info h3{
+    @apply font-apercu text-xl 2xl:text-2xl font-bold
+}
+.project-content h2{
+    @apply font-apercu text-2xl md:text-3xl 2xl:text-5xl font-bold
+}
+.project-content .content-block{
+    @apply flex flex-col gap-4 md:gap-6 mb-5 sm:mb-8
+}
+.project-content p, .project-content ul{
+    @apply text-lg md:text-xl 2xl:text-2xl font-light
+}
+.project-content ul{
+    @apply list-disc ml-8
+}
+
+.slider-controls{
+    @apply w-[34px] h-[34px] cursor-pointer rounded-full border border-white flex justify-center items-center transition hover:bg-dark/10;
+}
