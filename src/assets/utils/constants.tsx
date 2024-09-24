@@ -25,10 +25,10 @@ export enum ProjectCategories {
 }
 
 export enum PortfolioOwner {
-    FirstName = 'Fahad',
-    LastName = 'Ibrahim',
-    Email = 'fibrahimbutt@gmail.com',
-    Number = '+92 339 4080410',
+    FirstName = 'Muhammad',
+    LastName = 'Asad',
+    Email = 'meerasad636@gmail.com',
+    Number = '+92 306 2911114',
     Upwork = 'https://www.upwork.com/freelancers/leaddeveloper',
     GitHub = 'https://github.com/fahadibrahimdev',
     StackOverflow = 'https://stackoverflow.com/users/22702312/lead-dev',
