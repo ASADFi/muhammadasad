@@ -29,10 +29,10 @@ export enum PortfolioOwner {
     LastName = 'Asad',
     Email = 'meerasad636@gmail.com',
     Number = '+92 306 2911114',
-    Upwork = 'https://www.upwork.com/freelancers/leaddeveloper',
-    GitHub = 'https://github.com/fahadibrahimdev',
-    StackOverflow = 'https://stackoverflow.com/users/22702312/lead-dev',
-    LinkedIn = 'https://www.linkedin.com/in/fahad-ibrahim-251a102b2'
+    Upwork = 'https://www.upwork.com/freelancers/asadm80',
+    GitHub = 'https://github.com/ASADFi',
+    StackOverflow = 'https://stackoverflow.com/users/22293418/muhammad-asad',
+    LinkedIn = 'https://www.linkedin.com/in/muhammad-asad-733375254/'
 }
 
 const sayHelloLinkText: JSX.Element = <>Say Hello <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -279,7 +279,7 @@ export const clientsFeedback = [
     {
         companyName: 'DevDock',
         name: 'Abdul Wahab',
-        feedback: 'Fahad exceeded our expectations with his attention to detail and commitment to quality work. Our website is now mobile and SEO optimised. All thanks to him.',
+        feedback: 'Asad exceeded our expectations with his attention to detail and commitment to quality work. Our website is now mobile and SEO optimised. All thanks to him.',
         logo: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Logos/devdock.svg',
         image: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Avatars/aw.jpg',
         bgColor: ['#d1f2fd', '#d1f2fd'],
@@ -289,7 +289,7 @@ export const clientsFeedback = [
     {
         companyName: 'Dibbs',
         name: 'Emmanuel Arciga',
-        feedback: 'Fahad played an important role in the mobile development of Dibbs. He communicated well and provided regular updates and meet the deadlines. HE IS THE BEST!!!',
+        feedback: 'Asad played an important role in the mobile development of Dibbs. He communicated well and provided regular updates and meet the deadlines. HE IS THE BEST!!!',
         logo: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Logos/dibbs.png',
         image: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Avatars/avatar-1.jpg',
         bgColor: ['#fff', 'rgba(104,56,112,0.8)'],
@@ -299,7 +299,7 @@ export const clientsFeedback = [
     {
         companyName: 'MAB Solutions',
         name: 'Muhammad Abdullah',
-        feedback: 'When it comes to technology, it is fair to say that Fahad is a genius. They understood my concept immediately and built an excellent web app which proved to be far better than what I had in mind.',
+        feedback: 'When it comes to technology, it is fair to say that Asad is a genius. They understood my concept immediately and built an excellent web app which proved to be far better than what I had in mind.',
         logo: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Logos/mab.webp',
         image: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Avatars/avatar-2.jpg',
         bgColor: ['#00acbb', '#ccc'],
@@ -309,7 +309,7 @@ export const clientsFeedback = [
     {
         companyName: 'Renaissant',
         name: 'Patrick Wilkinson',
-        feedback: 'Working with Fahad was a remarkable and pleasant experience! He managed to implement all my app ideas along with great design and intuitive elements. Would definitely recommend!',
+        feedback: 'Working with Asad was a remarkable and pleasant experience! He managed to implement all my app ideas along with great design and intuitive elements. Would definitely recommend!',
         logo: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Logos/renaissant.webp',
         image: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Avatars/avatar-3.jpg',
         bgColor: ['#fff', '#CE5028'],
@@ -319,7 +319,7 @@ export const clientsFeedback = [
     {
         companyName: 'SAL',
         name: 'Lino Virgilio Domenico',
-        feedback: 'Fahad\'s command over mobile and web development impressed me as he was equally able to handle both. He developed an effective and easy-to-use platform for my business, SAL. Highly Recommended!',
+        feedback: 'Asad\'s command over mobile and web development impressed me as he was equally able to handle both. He developed an effective and easy-to-use platform for my business, SAL. Highly Recommended!',
         logo: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Logos/sal.svg',
         image: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Avatars/avatar-4.jpg',
         bgColor: ['#1c4f60', '#767479'],
@@ -329,7 +329,7 @@ export const clientsFeedback = [
     {
         companyName: 'Tepia',
         name: 'David Ryan Pabon',
-        feedback: 'Fahad Ibrahim is a fantastic coder. He resolved any technical challenges we faced during the development process and was also available for application launch and it\'s maintenance afterwards. He is, no doubt, the best asset of my team',
+        feedback: 'Asad Ibrahim is a fantastic coder. He resolved any technical challenges we faced during the development process and was also available for application launch and it\'s maintenance afterwards. He is, no doubt, the best asset of my team',
         logo: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Logos/tepia.svg',
         image: 'https://devprofiles.thundertechsol.com/devdock/public/reactjsassets/Avatars/avatar-5.jpg',
         bgColor: ['#80C97A', '#80C97A'],
@@ -629,7 +629,7 @@ export const tools: Tool[] = [
 
 export const services: { label: string, text: string, icon: React.ReactNode }[] = [
     {
-        label: '8+',
+        label: '5+',
         text: 'Years of Experience',
         icon: <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><g className="clippy"><path fill="#3D43D8" fillOpacity="0.8" stroke="#fff" strokeOpacity="0.6" strokeLinecap="round" strokeLinejoin="round" d="M7 7h32v32H7z"></path><path d="M15 7h16l-2.5 6h-11L15 7z" fill="#040B10" stroke="#fff" strokeOpacity="0.6" strokeLinecap="round" strokeLinejoin="round"></path><path className="group-hover:[stroke-opacity:0] group-hover:[stroke-dashoffset:0] svg-transition" d="M15 23h8M15 29h4" stroke="#fff" strokeOpacity="0.6" strokeLinecap="round" strokeLinejoin="round"></path></g></svg>
     },
