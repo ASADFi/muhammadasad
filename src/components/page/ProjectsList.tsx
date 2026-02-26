@@ -12,7 +12,7 @@ export default function ProjectsList({ filtersUpdated } : { filtersUpdated: () =
     useEffect(() => {
         setProjects(selectedFilter === 'All' ? projects : projects.filter((project) => project.category === selectedFilter));
         filtersUpdated();
-        }, [selectedFilter]);
+        }, [selectedFilter, filtersUpdated]);
 
     const ProjectsListSection = useRef<HTMLHeadingElement>(null);
 

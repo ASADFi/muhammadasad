@@ -1,10 +1,5 @@
-import Gleam from "../imgs/gleam.webp";
-import SimMarket from "../imgs/simmarket.webp";
-import SeaForester from "../imgs/seaforester.webp";
-import Cantihodo from "../imgs/cantinhodocoimbra.webp";
 import React from "react";
 import { NavigationLink, Project, Skill, SocialLink, Tool } from "./types";
-import exp from "constants";
 
 enum ProjectColors {
     Blue = '#589BDE',

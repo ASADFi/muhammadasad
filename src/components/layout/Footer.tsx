@@ -37,7 +37,7 @@ export default function Footer() {
                             <a href={`tel:${PortfolioOwner.Number.split(' ').join('')}`} className="text-2xl font-medium mb-8 mt-6 block">
                                 {PortfolioOwner.Number}
                             </a>
-                            <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" className="text-2xl font-medium mb-8 mt-6 block">
+                            <a target="_blank" rel="noreferrer noopener" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" className="text-2xl font-medium mb-8 mt-6 block">
                                 {PortfolioOwner.Email}
                             </a>
                         </div>

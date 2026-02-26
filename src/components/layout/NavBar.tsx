@@ -21,7 +21,7 @@ export default function NavBar() {
             }
 
         document.title = navigationLinks.filter(link => link.path === location.pathname)[0]?.title;
-    }, [location]);
+    }, [location, projectId, showMobileMenu]);
 
     return (
         <nav className="py-5 sm:py-10">

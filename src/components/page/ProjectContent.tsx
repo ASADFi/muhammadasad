@@ -66,7 +66,7 @@ export default function ProjectContent({ project } : { project: Project }) {
                                     information.</li>
                             </ul>
                             <div className="h-[470px] w-full rounded-xl md:rounded-3xl overflow-hidden">
-                                <img src={project.coverImage} alt="Project Cover Image" className="w-full h-full object-cover" />
+                                <img src={project.coverImage} alt="cover for this project" className="w-full h-full object-cover" />
                             </div>
                             <img src="" alt="" />
                         </div>
