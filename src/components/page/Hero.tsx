@@ -104,9 +104,9 @@ export default function Hero() {
                 <div className="flex">
                     <div className="w-full 2xl:w-8/12">
                         <h2 className="hero-text">
-                            I have 3 years of experience as a full-stack developer, specializing in Backend And Web
+                            I have 4+ years of experience as a full-stack developer, specializing in Backend And Web
                             Applications. On the frontend, I'm skilled in React.js, Next.js,
-                            Vue.js, React-Native. For backend development, I'm adept in Node.js, Express, Next.js and
+                            Vue.js, React-Native. For backend development, I'm adept in Node.js, Express, Next.js, Nest, fastfy, and
                             have experience working with both NoSQL or SQL databases like MongoDB and SQL databases like
                             PostgresSql.
                         </h2>
